@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .movie-header-table {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr 2fr 2fr 1fr;
+    border: 1px solid #000;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .movie-header {
+    padding: 5px;
+    border: 1px solid #000;
+  }
+
+  .movie-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr 2fr 2fr 1fr;
+    border: 1px solid #000;
+  }
+
+  .movie {
+    border: solid 1px lime;
+    width: 100%;
+  }
+
+  .movie-data {
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #000;
+  }
+
+  ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  }
+
+.sort-arrow {
+    display: none;
+    margin-left: 5px;
+    font-weight: normal;
+    color: gray; /* Set the initial color to gray */
+}
+
+
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+#movie-details-content,
+#plot-details-content {
+  margin: 50px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#movie-details-overlay,
+#plot-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  cursor: pointer;
+}
+
