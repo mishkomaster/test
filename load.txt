@@ -1,0 +1,12 @@
+const loadData = async () => {
+    const dataUri = "https://raw.githubusercontent.com/KichoX/movies-json/main/5311.json";
+    const response = await fetch(dataUri);
+
+    if (!response.ok) {
+        throw new Error("The data is not there");
+    }
+
+    const data = await response.json();
+    const movies = data.Movies; // Access the "Movies" array
+    return movies; // Return the array of movies
+}
